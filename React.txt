@@ -2,3 +2,11 @@ React is the most popular javascript library.
 Used by netflix and Instagram
 REact is a library, not a framework.
 React uses the react virtual DOM.
+React fir creates the exact copy of the DOM.
+Then figure out which part is new and only updates that part in virtual DOM.
+Finally, REact copies the only new part of virtual DOM.
+
+JSX will be translated into normal javascript bu Babel.
+
+Some Important rules if JSX
+1. We can't retrun more than one HTML once.
