@@ -10,3 +10,52 @@ JSX will be translated into normal javascript bu Babel.
 
 Some Important rules if JSX
 1. We can't retrun more than one HTML once.
+2. we can use JSx inside for loop, if-else,cases.
+3. HTML attribute names like "class" becomes "className".
+4. HTML tages must always be closed.
+
+React has two types of components
+1. Functional: These are stateless component and return react component.
+    Eg: fucntion Welcome(props){
+        return <h1>Welcome{props.name}</h1>
+        }
+    Eg: function example(){
+        return(<h1>I'm a functional component</h1>)
+        }
+    Eg: const Example=()=>{
+        return(<h1>I'm a functional component</h1>)
+    }
+
+2. class : They are more complex than functional components including contructors.
+    Eg : class ExampleComponent extends component{
+        render(){
+            return(
+                <h1>I'am a functional component</h1>
+            );
+        }
+    }
+
+How to call ?
+<ExampleComponent/>
+
+                                                              props
+
+React is a component-based library which divides th UI into little reusable pieces. In some cases, those components need to comunicate and
+the way to pass data between compoents is by using props.
+
+props is a special keyowrd in React, which stands for properties and is being used for passing data from one compoent to another.
+
+But the important part here is that data with props are being passed in a un-directional flow.
+
+Furthermore, props data is read-only, which means tha t data coming from the parent should not be changed by child compoent.
+
+class ParentComponent extends component{
+    render(){
+        return(
+            <h1>
+            I'm the parent component
+            <ChildComponet/>
+            </h1>
+        )
+    }
+}
